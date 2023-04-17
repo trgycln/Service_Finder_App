@@ -1,0 +1,14 @@
+
+.cardContainer{
+	min-height: 400px;
+}
+
+.image{
+	width: 100%;
+	aspect-ratio: 1;
+	margin-bottom: 30px;
+}
+
+.linkBtn{
+	width: 100%;
+}
