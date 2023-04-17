@@ -9,8 +9,8 @@ import CategoryDetailsPage from "./pages/category-details-page";
 import { useDispatch, useSelector } from "react-redux";
 import { useApi } from "./hooks/useApi";
 import { categoryAction } from "./redux/reducers/categoryReducer";
-import LoginPage from "./pages/auth/login/login-page";
-import RegisterPage from "./pages/auth/register/register-page";
+import LoginPage from "./pages/auth/login";
+import RegisterPage from "./pages/auth/register";
 
 function App() {
   const {categoryState} = useSelector(state=>state)

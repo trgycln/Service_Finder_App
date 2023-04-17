@@ -10,13 +10,16 @@ const MainPage = () => {
 <div>
 	<h2 className='text-center'>Kategoriler</h2>
 <Row>
-	 {
-		categoryState.categories.map((item, index)=>{
+
+	{
+		!categoryState.initialized ? 
+		(<div className='text-center'>Loading...</div>) : 
+		(categoryState.categories.map((item, index)=>{
 			return <Col key={index} lg={3} md={4} sm={6}>
 			<CategoryBox item={item}/>
 			</Col>
-		})
-	 }
+		}))
+	}
 	</Row>
 </div>
   )
